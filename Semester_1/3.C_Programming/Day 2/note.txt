@@ -1,0 +1,1 @@
+Không nên lưu tên file bằng tiếng việt, dev c++ đọc đường dẫn có tiếng việt sẽ bị lỗi phông và không tham chiếu đúng
