@@ -2,7 +2,7 @@
 
 int main() {
 	int a;
-	printf("nhap vao so nguyen n");
+	printf("nhap vao so nguyen n ");
 	scanf("%d",&a);
 	long long b;
 	b=a*a*(a+1)*(a+1)/4;

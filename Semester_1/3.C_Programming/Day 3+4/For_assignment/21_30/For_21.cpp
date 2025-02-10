@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include<math.h>
+//Vi?t chuong trình tính dân s? c?a m?t thành ph? sau 10 nam n?a, bi?t r?ng dân s? hi?n nay là 6.000.000, t? l? tang dân s? hàng nam là 1.8% .
+
+int main() {
+	double A=6000000*pow((1+0.018),10);
+	printf("%f",A);
+	//A = P(1 + r)^n
+}
+
