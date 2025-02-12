@@ -17,10 +17,9 @@
 
 
 int main(){
-	int n=1000000;
-	int kt=0;
-	printf("2\t3\t");
-	for(int i=3;i<=n;i+=2){
+	int n=10000;
+	int kt=1;
+	for(int i=2;i<=n;i++){
 		for(int j=2;j<=sqrt(i);j++){
 			if(i%j==0) {
 				kt=0;
@@ -29,7 +28,7 @@ int main(){
 			
 			else kt=1;
 		}
-		if(kt==1) printf("%d\t",i);
+		if(kt==1) printf("%d ",i);
 		
 	}
 }
