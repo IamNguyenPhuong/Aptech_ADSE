@@ -1,0 +1,3 @@
+nguyen van a	thai nguyen 	100000
+nguyen van c	thai bann	150000
+nguyen ban b	ha noi	200000
