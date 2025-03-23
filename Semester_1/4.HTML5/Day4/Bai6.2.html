@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 500px;
+      }
+      table {
+        width: 100%;
+      }
+      thead {
+        background-color: #fc6;
+        padding: 2px;
+        text-align: left;
+      }
+      td {
+        padding: 3px;
+      }
+      .input_date {
+        width: 30px;
+      }
+      .td-red {
+        color: red;
+      }
+      .td3 {
+        color: #fc6;
+      }
+      input {
+        border: 1px solid blue;
+      }
+      .input-Normal {
+        width: 60%;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Thông tin đăng nhập</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-red">Chọn tên đăng nhập</td>
+            <td class="td3">
+              <input class="input-Normal" type="text" />vd:hoaithu
+            </td>
+          </tr>
+          <tr>
+            <td class="td-red">Mật khẩu</td>
+            <td class="td3"><input type="text" />(ít nhất 6 kí tự)</td>
+          </tr>
+          <tr>
+            <td class="td-red">Nhập lại mật khẩu</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td class="td-red">Ảnh</td>
+            <td>
+              <input type="file" style="border: none" class="input-Normal" />
+              <span class="td3">(ảnh gif hoặc jpg)</span>
+            </td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th colspan="2">Thông tin cá nhân</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" class="input-Normal" /></td>
+          </tr>
+          <tr>
+            <td>Địa chỉ email</td>
+            <td><input type="text" class="input-Normal" /></td>
+          </tr>
+          <tr>
+            <td>Giới tính</td>
+            <td>
+              <input type="radio" name="gender" checked />Nam
+              <input type="radio" name="gender" />Nữ
+            </td>
+          </tr>
+          <tr>
+            <td>Ngày sinh</td>
+            <td>
+              Ngày <input type="text" class="input_date" />Tháng
+              <input type="text" class="input_date" />Năm
+              <input type="text" class="input_date" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nơi ở</td>
+            <td>
+              <select name="province" id="province">
+                <option value="">Chọn tỉnh</option>
+                <option value="TN">Thái Nguyên</option>
+                <option value="HN">Hà Nội</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Đăng kí tham gia</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

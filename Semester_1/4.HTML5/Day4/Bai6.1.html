@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 800px;
+      }
+      table {
+        color: green;
+        background-color: #dfb50e;
+        width: 100%;
+      }
+      th {
+        padding-bottom: 20px;
+        width: 100%;
+      }
+      td {
+        padding: 3px;
+      }
+      .input1 {
+        width: 90%;
+      }
+      .input2 {
+        width: 60%;
+      }
+      .input3 {
+        width: 75%;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Đăng kí thông tin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label for="name">Họ và tên</label></td>
+            <td><input class="input1" type="text " id="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Địa chỉ</label></td>
+            <td><input class="input1" type="text" id="address" /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Điện thoại</label></td>
+            <td><input class="input2" type="number" id="phone" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Giới Tính</label></td>
+            <td>
+              <input type="radio" id="male" />
+              <label for="male">Nam</label>
+              <input type="radio" id="female" />
+              <label for="female">Nữ</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="account">Tên tài khoản</label></td>
+            <td><input class="input1" type="text " id="account" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Mật khẩu</label></td>
+            <td><input class="input1" type="password" id="password" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="repassword">Nhập lại mật khẩu</label>
+            </td>
+            <td><input class="input1" type="password" id="repassword" /></td>
+          </tr>
+          <tr>
+            <td><label for="note">Ghi chú thêm</label></td>
+            <td><textarea class="input3" id="note"></textarea></td>
+          </tr>
+          <tr>
+            <td><label>Ảnh</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><label for="hobby">Sở thích</label></td>
+            <td>
+              <input type="checkbox" />
+              <label for="hobby">Thể thao</label>
+              <br />
+              <input type="checkbox" />
+              <label for="hobby">Âm nhạc</label>
+              <br />
+              <input type="checkbox" />
+              <label for="hobby">Game</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <button>Submit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      table {
+        width: 50%;
+        margin: auto;
+        border: 3px solid black;
+        background-color: #e0f9d9;
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      textarea,
+      select {
+        width: 95%;
+      }
+      label {
+        color: rgb(6, 196, 88);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit" method="post">
+      <hr />
+      <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+      <table>
+        <tr>
+          <td><label for="name">Họ và tên</label></td>
+          <td><textarea name="name" id="name"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="address">Địa chỉ</label></td>
+          <td><textarea name="address" id="address"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Điện thoại</label></td>
+          <td><textarea name="phone" id="phone"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="">Phái</label></td>
+          <td>
+            <input type="radio" name="gender" id="male" checked />
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Nữ</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="occupation">Nghề nghiệp</label></td>
+          <td>
+            <select name="occupation" id="occupation">
+              <option value="teacher">Giáo viên</option>
+              <option value="doctor">Bác sĩ</option>
+              <option value="engineer">Kỹ sư</option>
+              <option value="other">Khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="item">Chọn sản phẩm</label></td>
+          <td>
+            <select name="item" id="item" multiple size="4">
+              <option value="toothpaste">Kem đánh răng</option>
+              <option value="detergent">Bột giặt</option>
+              <option value="shampoo">Dầu gội đầu</option>
+              <option value="others">Khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="people">Số người tham gia dự đoán</label></td>
+          <td><textarea name="people" id="people"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button type="submit">Đồng ý</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
