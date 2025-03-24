@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New World Coffee</title>
+    <!-- Thêm Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset mặc định */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif; /* Sử dụng font Roboto */
+        background-color: #f4e4b2; /* Màu nền vàng */
+      }
+
+      header {
+        background-color: #d4a34f;
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #006633;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+      }
+
+      /* Navigation */
+      nav {
+        background-color: #f4e4b2; /* Cùng màu với phông nền */
+        padding: 10px;
+        width: 20%; /* Chiều rộng của nav */
+        text-align: right; /* Căn toàn bộ nội dung sang phải */
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column; /* Hiển thị theo chiều dọc */
+        gap: 15px;
+        text-align: right; /* Căn các mục sang phải */
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        padding: 10px 0; /* Khoảng cách trên dưới */
+        width: 120px; /* Khống chế chiều rộng */
+        display: inline-block; /* Đảm bảo width có hiệu lực */
+        text-align: center; /* Căn giữa nội dung */
+        border: 1px solid #000;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #d4a34f;
+        color: #fff;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: row; /* Chia main thành hai cột */
+        flex: 1;
+        background-color: #d4a34f;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .main-content .text {
+        flex: 1; /* Chiếm 50% chiều rộng */
+        color: #000; /* Màu chữ đen */
+        padding: 10px;
+      }
+
+      .main-content .text p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+        font-weight: bold; /* In đậm */
+        font-size: 18px; /* Kích thước chữ lớn hơn */
+      }
+
+      /* Làm nổi bật từ "Welcome" */
+      .main-content .text p span {
+        font-size: 36px; /* Kích thước lớn như h1 */
+        font-weight: bold;
+        text-transform: uppercase; /* Viết hoa */
+        color: #000; /* Màu đen */
+      }
+
+      .main-content .images {
+        flex: 1; /* Chiếm 50% chiều rộng */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      /* Căn chỉnh kích thước ảnh */
+      .main-content .images img {
+        width: 336px; /* Đặt kích thước cố định */
+        height: 336px; /* Đặt kích thước cố định */
+        object-fit: cover; /* Đảm bảo ảnh không bị méo */
+        border: 2px solid #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #d4a34f;
+        color: #fff;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>SCAAL - Brave New World Coffee</header>
+
+    <!-- Container -->
+    <div class="container">
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">This Week</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Cột văn bản -->
+        <div class="text">
+          <p>
+            <span>Welcome</span> to the Scaal Coffee Web site, home of the
+            finest coffee gifts in the world.
+          </p>
+          <p>
+            Take a moment to view our many products. We offer fine roasted
+            products as well as items to wear and items for the office.
+          </p>
+          <p>
+            Scaal has been serving fine coffee connoisseurs like you for over 50
+            years. We follow a roasting process that produces the finest coffees
+            in the world.
+          </p>
+          <p>Check with us often to see our special promotions of the week.</p>
+        </div>
+
+        <!-- Cột hình ảnh -->
+        <div class="images">
+          <img src="./img/coffee.jpg" alt="Coffee Cup" />
+          <img src="./img/coffee-logo.jpeg" alt="Coffee Logo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 New World Coffee. All rights reserved.</footer>
+  </body>
+</html>

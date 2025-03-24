@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story</title>
+    <style>
+      /* Reset mặc định */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: #f4e4b2; /* Màu nền vàng */
+      }
+
+      header {
+        background-color: #d4a34f;
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #006633;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+      }
+
+      nav {
+        background-color: #f4e4b2; /* Cùng màu với phông nền */
+        padding: 10px;
+        width: 20%; /* Chiều rộng của nav */
+      }
+
+      nav ul {
+        list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+        padding: 0; /* Loại bỏ khoảng cách mặc định */
+        margin: 0; /* Loại bỏ khoảng cách mặc định */
+        display: flex;
+        flex-direction: column; /* Hiển thị theo chiều dọc */
+        gap: 15px; /* Khoảng cách giữa các mục */
+      }
+
+      nav ul li {
+        text-align: left; /* Căn trái nội dung */
+      }
+
+      nav ul li a {
+        text-decoration: none; /* Loại bỏ gạch chân */
+        color: #000; /* Màu chữ đen */
+        font-weight: bold; /* In đậm */
+        padding: 10px 15px; /* Khoảng cách bên trong nút */
+        border: 1px solid #000; /* Viền đen */
+        border-radius: 5px; /* Bo góc */
+        display: inline-block; /* Đảm bảo width có hiệu lực */
+        width: 150px; /* Khống chế chiều rộng đồng đều */
+        text-align: center; /* Căn giữa nội dung */
+        transition: background-color 0.3s; /* Hiệu ứng hover */
+      }
+
+      nav ul li a:hover {
+        background-color: #d4a34f; /* Màu nền khi hover */
+        color: #fff; /* Màu chữ khi hover */
+      }
+
+      main {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background-color: #d4a34f;
+        padding: 20px;
+      }
+
+      section {
+        flex: 3; /* Phần nội dung chính chiếm 3 phần */
+        background-color: #d4a34f;
+        padding: 20px;
+        color: #000;
+      }
+
+      .right-space {
+        flex: 1; /* Phần không gian bên phải chiếm 1 phần */
+        background-color: #f4e4b2; /* Màu nền giống phông */
+      }
+
+      h2 {
+        color: #006633;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>SCAAL - Brave New World Coffee</header>
+
+    <!-- Container -->
+    <div class="container">
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">This Week</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Nội dung chính -->
+        <section>
+          <h2>Our Story</h2>
+          <p>
+            What is the one philosophy that drives SCAAL? We believe that no
+            matter where you go, you should always be able to enjoy the simple
+            pleasure of a good cup of coffee in a comfortable environment. At
+            home, reading the morning paper. At your local SCAAL, conversing
+            with a confidant. Or perhaps in some foreign land, SCAAL will be
+            greeting you like an old friend. After all, coffee is a ritual that
+            transcends all cultural boundaries. It makes us feel alert,
+            energetic and alive.
+          </p>
+          <h2>Where we began</h2>
+          <p>
+            Anders Carlsson lived a sheltered life in a small fishing village in
+            Marstrand, Sweden. As a child, he listened to stories of his
+            grandfather Olaf’s adventures and expeditions. Often his grandfather
+            would bring back exotic coffees for the family to enjoy. Upon his
+            graduation Anders left home to see the world. He worked all kinds of
+            odd jobs. He worked in Parisian cafes and Italian espresso bars. He
+            worked in the coffee fields of Brazil and New Guinea. And in a few
+            years, Anders learned the art of selecting the perfect coffee bean
+            and roasting it to perfection. He returned home in 1990 to open the
+            first SCAAL in Stockholm, Sweden. By creating his own unique blends
+            of coffee and a stimulating atmosphere, SCAAL quickly became the
+            place to gather – day or night – not only in Stockholm, Sweden, but
+            670 cities around the world.
+          </p>
+          <h2>What makes SCAAL the best coffee?</h2>
+          <p>
+            Anders has passed down the knowledge he learned as an apprentice in
+            the coffee fields to every buyer, roaster, and franchise owner.
+            SCAAL’s standards for coffee are never compromised. We only select
+            SHB – strictly hard bean or strictly high grown – coffee beans. To
+            ensure their flavorful oils are preserved, extraordinary steps are
+            taken to protect the coffee bean from heat, light, air and moisture.
+            All these efforts are made so that we may offer you the perfect cup
+            of coffee. There are so many places you could go to buy coffee.
+            We’ve gone to extraordinary efforts to ensure that SCAAL is your
+            best choice. The quality at harvest SCAAL relies on selective
+            picking, a labor-intensive process that involves cutting several
+            passes among the trees for those cherries that are perfectly ripe.
+            Then we select top grade SHB, which stands for strictly hard bean or
+            strictly high grown. Beans that are grown at a minimum altitude of
+            4,000 feet above sea level for optimum flavor. Within hours of
+            shipping our coffee to you, the beans are roasted on-site in small
+            batches by a Certified Roastmaster and vacuum-packed to retain its
+            fresh taste and rich aroma.
+          </p>
+        </section>
+
+        <!-- Không gian bên phải -->
+        <div class="right-space"></div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 New World Coffee. All rights reserved.</footer>
+  </body>
+</html>
