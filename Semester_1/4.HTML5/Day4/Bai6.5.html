@@ -4,6 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .img-container {
+        width: 100%;
+        height: 100px;
+        background-color: #f0f0f0;
+        padding: 3px;
+      }
+      #img1 {
+        width: 30%;
+        height: 100px;
+        float: left;
+      }
+      #img2 {
+        width: 30%;
+        height: 100px;
+        float: right;
+      }
+      hr {
+        background-color: #f20904;
+        height: 2px;
+        border: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        width: 70%;
+        margin: auto;
+      }
+      .input1 {
+        width: 50%;
+      }
+
+      select {
+        width: 50%;
+      }
+      .td1 {
+        text-align: right;
+        vertical-align: top;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="img-container">
+        <img src="./img/download.png" id="img1" />
+        <img src="./img/909_adobe.jpg" id="img2" />
+      </div>
+      <hr />
+    </header>
+    <main>
+      <h1>PHIẾU ĐĂNG KÝ</h1>
+      <form action="#" method="post">
+        <table>
+          <tr>
+            <td class="td1"><label for="name">Họ và tên:</label></td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                class="input1"
+              />(*)
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="address">Địa chỉ:</label></td>
+            <td>
+              <input type="text" name="address" id="address" class="input1" />
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="input1"
+              />(*)
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="">Giới tính:</label></td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Nam</label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Nữ</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="age">Tuổi:</label></td>
+            <td>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                required
+                class="input1"
+              />(*)
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="">Sở thích:</label></td>
+            <td>
+              <input type="checkbox" name="hobby" id="sport" />
+              <label for="sport">Thể thao</label>
+              <br />
+              <input type="checkbox" name="hobby" id="literature" />
+              <label for="literature">Văn học</label>
+              <br />
+              <input type="checkbox" name="hobby" id="it" />
+              <label for="it">Công nghệ thông tin</label>
+              <br />
+              <input type="checkbox" name="hobby" id="history" />
+              <label for="history">Lịch sử</label>
+              <br />
+              <input type="checkbox" name="hobby" id="game" />
+              <label for="game">Game</label>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="major">Chuyên ngành:</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">Công nghệ Web</option>
+                <option value="">Thiết kế phần mềm</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="">Gửi hình:</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td class="td1"><label for="requirements">Yêu cầu:</label></td>
+            <td>
+              <select name="" id="" multiple>
+                <option value="">Yêu cầu 1</option>
+                <option value="">Yêu cầu 2</option>
+                <option value="">Yêu cầu 3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button>Gửi thông tin</button>
+              <button>Nhập lại</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
 </html>
