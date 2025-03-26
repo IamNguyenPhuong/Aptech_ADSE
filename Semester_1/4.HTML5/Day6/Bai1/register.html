@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký thành viên</title>
+
+    <style>
+      table {
+        background-color: #d4a34f;
+        width: 100%;
+
+        padding-bottom: 500px;
+      }
+
+      label {
+        color: #006633;
+      }
+      textarea {
+        width: 90%;
+      }
+      .input1 {
+        width: 90%;
+      }
+      .td1 {
+        width: 30%; /* Khống chế chiều rộng của cột chứa label */
+        text-align: left;
+        vertical-align: top;
+        padding: 5px;
+      }
+      header ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      header ul li {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px;
+      }
+      header div {
+        align-items: center;
+      }
+      #hello {
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+      header {
+        border-bottom: 3px solid black;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 200px;
+        margin-right: 100px;
+      }
+      a {
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        /* border: 1px solid black; */
+        margin: 10px;
+      }
+      #section1 {
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      section ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      section ul li {
+        border: 1px solid black;
+        border-right: none;
+        padding: 10px;
+        font-weight: bold;
+      }
+      main {
+        margin-top: 3px;
+        display: flex;
+      }
+      form {
+        width: 100%;
+        flex-grow: 1;
+      }
+      #section4 {
+        flex-basis: 80%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+      }
+    </style>
+  </head>
+  <header>
+    <ul>
+      <li style="background-color: rgb(228, 210, 39)">S</li>
+      <li style="background-color: rgb(141, 176, 26)">C</li>
+      <li style="background-color: rgb(168, 23, 64)">A</li>
+      <li style="background-color: rgb(17, 131, 230)">L</li>
+      <li style="background-color: rgb(218, 28, 136)">L</li>
+    </ul>
+    <div>
+      <p id="hello">brave new world coffee</p>
+    </div>
+  </header>
+  <body>
+    <main>
+      <section id="section1">
+        <ul>
+          <li><a href="#">Our story</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">This week</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </section>
+      <section id="section4">
+        <form action="#" method="post">
+          <table>
+            <!-- Thead -->
+            <thead>
+              <tr>
+                <td colspan="2">
+                  <h1>Đăng ký thành viên</h1>
+                </td>
+              </tr>
+            </thead>
+            <!-- Tbody -->
+            <tbody>
+              <tr>
+                <td class="td1"><label for="fullname">Họ và tên:</label></td>
+                <td>
+                  <input
+                    class="input1"
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="td1"><label for="address">Địa chỉ:</label></td>
+                <td>
+                  <input
+                    class="input1"
+                    type="text"
+                    id="address"
+                    name="address"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="td1"><label for="phone">Điện thoại:</label></td>
+                <td><input type="tel" id="phone" name="phone" required /></td>
+              </tr>
+              <tr>
+                <td class="td1"><label for="gender">Giới tính:</label></td>
+                <td>
+                  <input type="radio" id="male" name="gender" />
+                  <label for="male">Nam</label>
+                  <input type="radio" id="female" name="gender" />
+                  <label for="female">Nữ</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="td1"><label for="password">Mật khẩu:</label></td>
+                <td>
+                  <input class="input1" type="password" id="password" />
+                </td>
+              </tr>
+              <tr>
+                <td class="td1">
+                  <label for="countries"
+                    >Các nước sử dụng Cafe nhiều nhất:</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" id="germany" name="countries" />
+                  <label for="germany">Đức</label>
+                  <input
+                    type="checkbox"
+                    id="usa"
+                    name="countries"
+                    value="usa"
+                  />
+                  <label for="usa">Mỹ</label>
+                  <br />
+                  <input type="checkbox" id="france" name="countries" />
+                  <label for="france">Pháp</label>
+                  <input type="checkbox" id="italy" name="countries" />
+                  <label for="italy">Ý</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="td1"><label for="notes">Ghi chú thêm:</label></td>
+                <td>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    rows="4"
+                    cols="30"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button>Đồng ý</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
