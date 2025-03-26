@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Homework.css" />
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        background-color: #1c1c1c;
+        padding: 0 10%;
+      }
+      nav {
+        background-color: #e94e1b;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px auto 30px auto;
+      }
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 20px;
+      }
+      nav ul li {
+        padding: 0 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav div {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+      }
+      header section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .div-header {
+        width: 40%;
+      }
+      .div-header h1 {
+        color: #e94e1b;
+        font-size: 32px;
+        font-weight: lighter;
+      }
+      .div-header p {
+        color: #a9a9a9;
+        font-size: 16px;
+      }
+      .div-header button {
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: #a9a9a9;
+      }
+      main {
+        padding: 20px 10%;
+        background-color: #a9a9a9;
+      }
+      .main-section-1 {
+        background-color: #1c1c1c;
+        color: white;
+      }
+      .main-section-1 p {
+        padding: 15px;
+      }
+      .main-section-2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .main-section-2 div {
+        background-color: white;
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      .main-section-2 div p {
+        color: #e94e1b;
+      }
+      .main-section-2 div h1 {
+        font-weight: lighter;
+        width: 80%;
+        text-align: center;
+        border-top: 1px solid rgb(221, 217, 217);
+      }
+      .main-section-2 div button {
+        border-radius: 10px;
+        color: white;
+        padding: 5px 10px;
+        background-color: #a9a9a9;
+        border: none;
+        transition: background-color 5s ease;
+      }
+      .main-section-2 div button:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+      footer {
+        background-color: #e94e1b;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./HiTech/Đề/images/logo.png" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Appliances</a></li>
+          <li><a href="#">Computers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div>
+          <img src="./HiTech/Đề/images/shopping_icon.png" />
+          <label for=""> 0 ITEMS(S)</label>
+        </div>
+      </nav>
+      <section>
+        <div class="div-header">
+          <h1>Pick your best product</h1>
+          <p>
+            Vivamus vitae augue at quam frigilla tristique sit amet acin ante
+            sikumpre tisdin.
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+        <div>
+          <img src="./HiTech/Đề/images/slider-img.png" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="main-section-1">
+        <p>Browse All Categories</p>
+      </section>
+      <section class="main-section-2">
+        <div>
+          <p>Whirlpool LTE5243D 3.4</p>
+          <img src="./HiTech/Đề/images/product-img1.jpg" />
+          <h1>$839.93</h1>
+          <button>Add to cart</button>
+        </div>
+        <div>
+          <p>Whirlpool LTE5243D 3.4</p>
+          <img src="./HiTech/Đề/images/product-img2.jpg" />
+          <h1>$839.93</h1>
+          <button>Add to cart</button>
+        </div>
+        <div>
+          <p>Whirlpool LTE5243D 3.4</p>
+          <img src="./HiTech/Đề/images/product-img3.jpg" />
+          <h1>$839.93</h1>
+          <button>Add to cart</button>
+        </div>
+        <div>
+          <p>Whirlpool LTE5243D 3.4</p>
+          <img src="./HiTech/Đề/images/product-img4.jpg" />
+          <h1>$839.93</h1>
+          <button>Add to cart</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p></p>
+      <p>Aptech - Võ Nguyên Phương</p>
+      <img src="./HiTech/Đề/images/arrow_up.png" />
+    </footer>
+  </body>
+</html>
