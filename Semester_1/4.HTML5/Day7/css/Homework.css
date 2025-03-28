@@ -107,3 +107,18 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.main-section-2 div img {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng container */
+  height: auto; /* Giữ tỷ lệ ảnh */
+}
+@media (max-width: 768px) {
+  .main-section-2 {
+    flex-direction: column; /* Chuyển sang bố cục dọc */
+    align-items: center; /* Căn giữa các phần tử */
+  }
+
+  .main-section-2 div {
+    width: 80%; /* Tăng chiều rộng để phù hợp màn hình nhỏ */
+    margin-bottom: 20px; /* Thêm khoảng cách giữa các phần tử */
+  }
+}
