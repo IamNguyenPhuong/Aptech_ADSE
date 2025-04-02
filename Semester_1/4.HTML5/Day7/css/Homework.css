@@ -107,7 +107,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.main-section-2 div img {
+img {
   max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng container */
   height: auto; /* Giữ tỷ lệ ảnh */
 }
@@ -120,5 +120,9 @@ footer {
   .main-section-2 div {
     width: 80%; /* Tăng chiều rộng để phù hợp màn hình nhỏ */
     margin-bottom: 20px; /* Thêm khoảng cách giữa các phần tử */
+  }
+  .div-header {
+    width: 100%;
+    height: auto;
   }
 }
