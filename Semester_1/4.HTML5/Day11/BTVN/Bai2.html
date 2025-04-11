@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Bai2.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Đăng Ký</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <div class="error" id="usernameError">
+            Username không được để trống
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <div class="error" id="passwordError">
+            Password không được để trống
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email" />
+          <div class="error" id="emailError">Email không được để trống</div>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter age" min="1" />
+          <div class="error" id="ageError">Age không được để trống</div>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" />
+          <div class="error" id="dobError">
+            Date of Birth không được để trống
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="123-456-7890" />
+          <div class="error" id="phoneError">
+            Phone Number không được để trống
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input type="url" id="website" placeholder="https://example.com" />
+          <div class="error" id="websiteError">Website không được để trống</div>
+        </div>
+        <div class="form-group">
+          <label for="resume">Upload Resume</label>
+          <input type="file" id="resume" />
+          <div class="error" id="resumeError">Vui lòng chọn một file</div>
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <input type="radio" name="gender" value="Male" id="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" name="gender" value="Female" id="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" name="gender" value="Other" id="other" />
+            <label for="other">Other</label><br />
+          </div>
+          <div class="error" id="genderError">Gender không được để trống</div>
+        </div>
+        <div class="form-group">
+          <label>Interests</label>
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              name="interests"
+              value="Sports"
+              id="sports"
+            />
+            <label for="sports">Sports</label><br />
+            <input type="checkbox" name="interests" value="Music" id="music" />
+            <label for="music">Music</label><br />
+            <input
+              type="checkbox"
+              name="interests"
+              value="Coding"
+              id="coding"
+            />
+            <label for="coding">Coding</label>
+          </div>
+          <div class="error" id="interestsError">
+            Vui lòng chọn ít nhất một sở thích
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bio">Short Bio</label>
+          <textarea
+            id="bio"
+            placeholder="Tell us a little about yourself"
+          ></textarea>
+          <div class="error" id="bioError">Short Bio không được để trống</div>
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Experience (Years)</label>
+          <input
+            type="range"
+            id="experience"
+            min="0"
+            max="50"
+            value="0"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <output>0</output>
+          <div class="error" id="experienceError">
+            Experience không được để trống
+          </div>
+        </div>
+        <button type="button" onclick="validateForm()">Submit</button>
+      </form>
+    </div>
+    <script src="Bai2.js"></script>
+  </body>
+</html>

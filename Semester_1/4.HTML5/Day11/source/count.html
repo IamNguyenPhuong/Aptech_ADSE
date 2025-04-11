@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="number1">So thu 1</label>
+      <input type="text" id="number1" name="number1" />
+      <br />
+      <label for="number2">So thu 2</label>
+      <input type="text" id="number2" name="number2" />
+      <br />
+      <button type="button" onclick="tinhTong()">Count</button>
+      <br />
+      <span id="tong"></span>
+    </form>
+    <script>
+      let a = document.getElementById("number1");
+      let b = document.getElementById("number2");
+      function tinhTong() {
+        let c = parseInt(a.value) + parseInt(b.value);
+        document.getElementById("tong").innerHTML = c;
+        console.log(c);
+      }
+    </script>
+  </body>
+</html>

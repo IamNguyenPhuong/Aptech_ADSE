@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        width: 100px;
+        display: inline-block;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thong tin sinh vien</h1>
+    <form action="#">
+      <label for="MSV">MSSV</label>
+      <input type="text" id="MSV" name="MSV" />
+      <br />
+      <label for="name">Ten</label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="age">Tuoi</label>
+      <input type="text" id="age" name="age" />
+      <br />
+      <label for="address">Dia chi</label>
+      <input type="text" id="address" name="address" />
+      <br />
+      <label for="gender">Gioi tinh</label>
+      <input type="radio" name="gender" id="Male" value="Nam" checked />
+      <label for="Male">Nam</label>
+      <input type="radio" name="gender" id="Female" value="Nu" />
+      <label for="Female">Nu</label>
+      <br />
+      <label for="subject">Nganh hoc</label>
+      <select name="subject" id="subject">
+        <option value="CTDL">CTDL</option>
+        <option value="GT">GT</option>
+        <option value="LTW">LTW</option>
+
+        <option value="TH">TH</option>
+      </select>
+      <br />
+      <button type="button" onclick="Add()">Add</button>
+      <button type="button" onclick="Update()">Update</button>
+      <button type="button" onclick="Reset()">Reset</button>
+    </form>
+    <h1>Danh sach sinh vien</h1>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>MSSV</th>
+          <th>Ten</th>
+          <th>Tuoi</th>
+          <th>Dia chi</th>
+          <th>Gioi tinh</th>
+          <th>Nganh hoc</th>
+          <th>Hanh dong</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Rows will be added here dynamically -->
+      </tbody>
+    </table>
+    <script src="../js/index2.js"></script>
+  </body>
+</html>

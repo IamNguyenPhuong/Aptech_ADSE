@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Information</title>
+    <link rel="stylesheet" href="Bai3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Thông Tin Thực Vật</h2>
+      <form id="plantForm">
+        <div class="form-group">
+          <label for="maThucVat">Mã Thực Vật</label>
+          <input type="text" id="maThucVat" />
+          <div class="error" id="maThucVatError"></div>
+        </div>
+        <div class="form-group">
+          <label for="ten">Tên</label>
+          <input type="text" id="ten" />
+          <div class="error" id="tenError"></div>
+        </div>
+        <div class="form-group">
+          <label>Giới Tính</label>
+          <div class="radio-group">
+            <input type="radio" name="gioiTinh" value="Đực" id="duc" />
+            <label for="duc">Đực</label>
+            <input type="radio" name="gioiTinh" value="Cái" id="cai" />
+            <label for="cai">Cái</label>
+          </div>
+          <div class="error" id="gioiTinhError"></div>
+        </div>
+        <div class="form-group">
+          <label for="noiSong">Nơi Sống</label>
+          <select id="noiSong">
+            <option value="">Chọn nơi sống</option>
+            <option value="Rừng">Rừng</option>
+            <option value="Vườn">Vườn</option>
+            <option value="Sa mạc">Sa mạc</option>
+          </select>
+          <div class="error" id="noiSongError"></div>
+        </div>
+        <div class="form-group">
+          <label for="chieuCao">Chiều Cao</label>
+          <input type="number" id="chieuCao" min="0" step="0.1" />
+          <div class="error" id="chieuCaoError"></div>
+        </div>
+        <div class="form-group">
+          <label for="ngaySinh">Ngày Sinh</label>
+          <input type="date" id="ngaySinh" />
+          <div class="error" id="ngaySinhError"></div>
+        </div>
+        <div class="form-group">
+          <label>Sở Thích</label>
+          <div class="checkbox-group">
+            <input type="checkbox" name="soThich" value="Nắng" id="nang" />
+            <label for="nang">Nắng</label><br />
+            <input type="checkbox" name="soThich" value="Mưa" id="mua" />
+            <label for="mua">Mưa</label><br />
+            <input type="checkbox" name="soThich" value="Gió" id="gio" />
+            <label for="gio">Gió</label>
+          </div>
+          <div class="error" id="soThichError"></div>
+        </div>
+        <button type="button" onclick="addPlant()">Add</button>
+        <button type="button" onclick="updatePlant()" id="updateBtn" disabled>
+          Update
+        </button>
+      </form>
+
+      <h2>Danh Sách Thực Vật</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Mã Thực Vật</th>
+            <th>Tên</th>
+            <th>Giới Tính</th>
+            <th>Nơi Sống</th>
+            <th>Chiều Cao</th>
+            <th>Ngày Sinh</th>
+            <th>Sở Thích</th>
+            <th>Sửa</th>
+          </tr>
+        </thead>
+        <tbody id="plantList"></tbody>
+      </table>
+    </div>
+    <script src="Bai3.js"></script>
+  </body>
+</html>

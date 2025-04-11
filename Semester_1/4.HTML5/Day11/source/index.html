@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <label for="name">Username:</label>
+      <input type="text" id="name" name="name" />
+      <span class="error-message"></span>
+      <br />
+      <label for="password">PassWord:</label>
+      <input type="password" id="password" name="password" />
+      <span class="error-message"></span>
+      <br />
+
+      <button type="button" onclick="checkLogin()">Login</button>
+      <button type="button" onclick="Del()">Delete</button>
+    </form>
+    <script>
+      let user = document.getElementById("name");
+      let pass = document.getElementById("password");
+      let error = document.getElementsByClassName("error-message");
+
+      function checkLogin() {
+        if (user.value === "") {
+          console.log("Please enter a username.");
+          error[0].innerHTML = "Username dang trong.";
+        }
+        if (pass.value === "") {
+          console.log("Please enter a password.");
+          error[1].innerHTML = "pass dang trong.";
+        }
+        if (user.value == "HangNT169" && pass.value == "123456") {
+          alert("Login successful!");
+        }
+      }
+      function Del() {
+        user.value = "";
+        pass.value = "";
+        error[0].innerHTML = "";
+        error[1].innerHTML = "";
+        console.log("Da xoa thanh cong");
+      }
+    </script>
+  </body>
+</html>
