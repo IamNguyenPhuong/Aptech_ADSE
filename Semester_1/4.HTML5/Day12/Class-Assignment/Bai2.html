@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="800"
+      height="600"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <script>
+      let canvas = document.getElementById("canvas");
+      let ctx = canvas.getContext("2d");
+      //
+      ctx.globalAlpha = 0.5; // Set global alpha to 0.5 for all shapes
+      //
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 50, 200, 200); // Draw a blue rectangle
+      //
+      ctx.fillStyle = "red";
+      ctx.beginPath();
+      ctx.arc(200, 200, 100, 0, Math.PI * 2); // Draw a red circle
+      ctx.fill(); // Fill the circle with red color
+    </script>
+  </body>
+</html>

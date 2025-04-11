@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      form {
+        border: 1px solid black;
+        width: 60%;
+        margin: 0 auto;
+      }
+      label,
+      input,
+      button {
+        margin: 10px;
+      }
+      input {
+        width: 90%;
+        padding: 5px;
+      }
+      button {
+        transition: background-color 5s ease;
+      }
+      button:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Đăng kí sinh viên</h1>
+    <form action="#">
+      <label for="ma">Mã sinh viên</label><br />
+      <input type="text" id="ma" name="ma" /><br />
+      <span id="check1"></span><br />
+      <label for="age">Tuổi</label><br />
+      <input type="number" id="age" name="age" /><br />
+      <span id="check2"></span><br />
+      <label for="password">Mật khẩu</label><br />
+      <input type="password" id="password" name="password" /><br />
+      <span id="check3"></span>
+      <label for="re-password">Xác nhận mật khẩu</label><br />
+      <input type="password" id="re-password" name="re-password" /><br />
+      <span id="check4"></span><br />
+      <button type="button" onclick="DangKy()">Đăng ký</button>
+    </form>
+  </body>
+  <script>
+    function DangKy() {
+      let ma = document.getElementById("ma").value;
+      let age = document.getElementById("age").value;
+      let password = document.getElementById("password").value;
+      let rePassword = document.getElementById("re-password").value;
+      if (ma === "") {
+        document.getElementById("check1").innerHTML =
+          "Mã sinh viên không được để trống";
+      }
+
+      if (age === "") {
+        document.getElementById("check2").innerHTML =
+          "Tuoi không được để trống";
+      }
+      if (password != rePassword) {
+        document.getElementById("check4").innerHTML = "Mật khẩu không khớp";
+      }
+      if (ma != "" && age != "" && password == rePassword) {
+        alert("Đăng ký thành công");
+      } else {
+        alert("Đăng ký thất bại");
+      }
+    }
+  </script>
+</html>
