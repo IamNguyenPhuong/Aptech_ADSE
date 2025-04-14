@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="500"
+      height="500"
+      style="border: 1px solid black"
+    >
+    </canvas>
+    <script>
+      let ctx = document.getElementById("canvas").getContext("2d");
+      ctx.globalAlpha = 0.5;
+      ctx.fillStyle = "Blue";
+      ctx.fillRect(50, 50, 200, 200);
+      ctx.fillStyle = "Red";
+      ctx.beginPath();
+      ctx.arc(150, 150, 50, 0, Math.PI * 2);
+      ctx.fill();
+    </script>
+  </body>
+</html>
