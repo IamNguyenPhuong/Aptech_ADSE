@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai5</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 5px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+      button {
+        width: 100%;
+        text-align: center;
+      }
+      label,
+      input {
+        margin: 5px 0;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Đăng kí thành viên</h1>
+    <form action="#" id="form">
+      <label for="name">Họ tên</label>
+      <input type="text" name="name" id="name" />
+      <span id="id1"></span>
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <span id="id2"></span>
+      <br />
+      <label for="phone">Số điện thoại</label>
+      <input type="text" name="phone" id="phone" />
+      <br />
+      <label for="user">User</label>
+      <input type="text" name="user" id="user" />
+      <br />
+      <label for="pass">Pass</label>
+      <input type="password" name="pass" id="pass" />
+      <br />
+      <label for="repass">Repass</label>
+      <input type="password" name="repass" id="repass" />
+      <span id="id3"></span>
+      <br />
+      <label for="known">Bạn biết tôi</label>
+      <input type="radio" name="known" id="friend" checked /> Bạn bè
+      <input type="radio" name="known" id="facebook" /> Facebook
+      <br />
+      <button onclick="check()">Đăng kí</button>
+    </form>
+    <script>
+      function check() {
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let phone = document.getElementById("phone");
+        let user = document.getElementById("user");
+        let pass = document.getElementById("pass");
+        let repass = document.getElementById("repass");
+        if (name.value.trim() == "") {
+          document.getElementById("id1").innerHTML = "Vui lòng nhập họ tên";
+        }
+        if (email.value.trim() == "") {
+          document.getElementById("id2").innerHTML = "Vui lòng nhập email";
+        }
+        if (pass.value != repass.value) {
+          document.getElementById("id3").innerHTML = "Mật khẩu không khớp";
+        }
+        if (
+          name.value != "" &&
+          email.value != "" &&
+          pass.value == repass.value
+        ) {
+          alert("Đăng kí thành công");
+          fomr.reset();
+        } else {
+          alert("Đăng kí thất bại");
+        }
+        // ngăn chặn form submit
+      }
+    </script>
+  </body>
+</html>

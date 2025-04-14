@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+      th,
+      table,
+      td {
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thông tin điện thoại</h1>
+    <label for="ma">Mã điện thoại</label>
+    <input type="text" id="ma" /> <br />
+    <label for="ten">Tên điện thoại</label>
+    <input type="text" name="ten" id="ten" /><br />
+    <label for="price">Giá</label>
+    <input type="number" name="price" id="price" /><br />
+    <label for="color">Màu sắc</label>
+
+    <select name="color" id="color">
+      <option value="Đen">Đen</option>
+      <option value="Trắng">Trắng</option></select
+    ><br />
+    <label for="day">Ngày sản xuất</label>
+    <input type="date" /><br />
+    <label for="hang">Hãng sản xuất</label>
+    <select name="color" id="color">
+      <option value="Apple">Apple</option>
+      <option value="SamSung">SamSung</option></select
+    ><br />
+    <button onclick="Add()">Add</button>
+    <button>Update</button>
+    <button>Reset</button>
+
+    <br />
+    <h1>Danh sách điện thoại</h1>
+    <table id="myTable" border="1px">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Mã</th>
+          <th>Tên</th>
+          <th>Giá</th>
+          <th>Màu sắc</th>
+          <th>Ngày sản xuất</th>
+          <th>Nhà sản xuất</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script>
+      function Add() {
+        let ma = document.getElementById("ma").value;
+        let ten = document.getElementById("ten").value;
+        let price = document.getElementById("price").value;
+        let color = document.getElementById("color").value;
+      }
+      let test = {
+        ma: ma.value,
+        ten: ten.value,
+        price: price.value,
+        color: color.value,
+      };
+
+      // add
+      let tableBody = document.getElementById("tableBody");
+      let newRow = tableBody.insertRow();
+
+      let cell1 = newRow.insertCell(0);
+      let cell2 = newRow.insertCell(1);
+      let cell3 = newRow.insertCell(2);
+      let cell4 = newRow.insertCell(3);
+      let cell5 = newRow.insertCell(4);
+      cell1.textContent = 1;
+      cell2.textContent = test.ma;
+      cell3.textContent = test.ten;
+      cell4.textContent = test.price;
+      cell5.textContent = test.color;
+    </script>
+  </body>
+</html>
