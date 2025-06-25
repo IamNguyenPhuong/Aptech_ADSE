@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Máy tính đơn giản</title>
   </head>
   <body>
     <h1>Máy tính đơn giản</h1>
@@ -18,34 +18,85 @@
     <br />
     <label for="result">Kết quả</label>
     <span id="result"></span>
+
+    <script>
+      // Get DOM elements
+      const number1 = document.getElementById("number1");
+      const number2 = document.getElementById("number2");
+      const resultSpan = document.getElementById("result");
+      const tongBtn = document.getElementById("tong");
+      const hieuBtn = document.getElementById("hieu");
+      const tichBtn = document.getElementById("tich");
+      const thuongBtn = document.getElementById("thuong");
+
+      // Function to validate inputs and get numbers
+      function getNumbers() {
+        const a = Number(number1.value);
+        const b = Number(number2.value);
+        if (
+          isNaN(a) ||
+          isNaN(b) ||
+          number1.value === "" ||
+          number2.value === ""
+        ) {
+          return null;
+        }
+        return { a, b };
+      }
+
+      // Addition
+      function Tong() {
+        const numbers = getNumbers();
+        if (numbers) {
+          const { a, b } = numbers;
+          resultSpan.innerText = (a + b).toString();
+        } else {
+          resultSpan.innerText = "Vui lòng nhập số hợp lệ";
+        }
+      }
+
+      // Subtraction
+      function Hieu() {
+        const numbers = getNumbers();
+        if (numbers) {
+          const { a, b } = numbers;
+          resultSpan.innerText = (a - b).toString();
+        } else {
+          resultSpan.innerText = "Vui lòng nhập số hợp lệ";
+        }
+      }
+
+      // Multiplication
+      function Tich() {
+        const numbers = getNumbers();
+        if (numbers) {
+          const { a, b } = numbers;
+          resultSpan.innerText = (a * b).toString();
+        } else {
+          resultSpan.innerText = "Vui lòng nhập số hợp lệ";
+        }
+      }
+
+      // Division
+      function Thuong() {
+        const numbers = getNumbers();
+        if (numbers) {
+          const { a, b } = numbers;
+          if (b === 0) {
+            resultSpan.innerText = "Không thể chia cho 0";
+          } else {
+            resultSpan.innerText = (a / b).toString();
+          }
+        } else {
+          resultSpan.innerText = "Vui lòng nhập số hợp lệ";
+        }
+      }
+
+      // Attach event listeners to buttons
+      tongBtn.addEventListener("click", Tong);
+      hieuBtn.addEventListener("click", Hieu);
+      tichBtn.addEventListener("click", Tich);
+      thuongBtn.addEventListener("click", Thuong);
+    </script>
   </body>
-  <script>
-    const number1 = document.getElementById("number1");
-    const number2 = document.getElementById("number2");
-    const result = document.getElementById("result");
-    function Tong() {
-      let a = number1.value();
-      let b = number2.value();
-      let result = Number(a) + Number(b);
-      document.getElementById("result")=result;
-    }
-    function Hieu() {
-      let a = number1.value();
-      let b = number2.value();
-      let result = Number(a) - Number(b);
-      document.getElementById("result")=result;
-    }
-    function Tich() {
-      let a = number1.value();
-      let b = number2.value();
-      let result = Number(a) * Number(b);
-      document.getElementById("result")=result;
-    }
-    function Thuong() {
-      let a = number1.value();
-      let b = number2.value();
-      let result = Number(a) / Number(b);
-      document.getElementById("result")=result;
-    }
-  </script>
 </html>
